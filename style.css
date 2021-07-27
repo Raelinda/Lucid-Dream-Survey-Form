@@ -1,0 +1,307 @@
+/ *============CSS reset - Start=============*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+/* Remove list styles & padding on ul & ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'],
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+}
+
+
+/* removes default underline from links */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ============
+===============
+CSS reset - End
+===============
+=============== */
+
+
+
+
+/* ==========
+fonts
+=========== */
+
+/* josefin-sans-300 - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('fonts/josefin-sans-v17-latin-300.woff');
+}
+
+/* josefin-sans-regular - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/josefin-sans-v17-latin-regular.woff');
+}
+
+/* josefin-sans-700 - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/josefin-sans-v17-latin-700.woff');
+}
+
+/* ========
+body basics
+=========== */
+
+:root {
+  --trans-blue: #003a5cb3;
+  --background-blue: #003a5c;
+  --accent-text: #CB8DC3;
+}
+
+body {
+  background: var(--background-blue);
+  color: ghostwhite;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.25rem;
+}
+
+body:before {
+  background: url(images/statue_blue.jpg) no-repeat;
+  background-size: cover;
+  background-position-x: 62%;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -10;
+
+}
+
+/* =======
+Typography
+========== */
+
+h1 {
+  font-weight: normal;
+  font-size: 3.25rem;
+  line-height: 1;
+  margin-bottom: .2em;
+  text-align: center;
+}
+
+@keyframes lucid {
+  0% {
+    opacity: 0;
+    transform: scale(25) rotate(360deg);
+  }
+
+  90% {
+    opacity: 0.2;
+    transform: scale(.95);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.header__rotating-text {
+  animation: lucid 2000ms ease-out 1000ms backwards;
+  font-size: .625rem;
+  font-weight: 700;
+  letter-spacing: .75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.reality-checks__title,
+.fave-technique,
+.lucidity-scale__title,
+.submit,
+footer {
+  text-align: center;
+}
+
+/* ======
+layout
+======== */
+
+.container {
+  background: var(--trans-blue);
+  border-radius: 5px;
+  padding: .75em;
+  margin: 1rem auto;
+  width: min(88%, 950px);
+  border: 1px solid green;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* header */
+
+/* user info */
+
+.user-info input {
+  background: ghostwhite;
+  border: 1px solid ghostwhite;
+  border-radius: 2px;
+  padding-left: .5em;
+  font-size: 1rem;
+}
+.user-info input:focus {
+border: 1px solid var(--accent-text);
+}
+#fName,
+#lName {
+  margin-bottom: .5em;
+}
+
+/* reality checks */
+.reality-checks__title {
+  font-size: 1.5rem;
+  margin-bottom: .5em;
+  line-height: 1.1;
+}
+.reality-checks input:hover {
+  cursor: pointer;
+}
+
+.light-weight-text {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* favorite techniques */
+.fave-technique__label {
+  display: inline-block;
+  margin-bottom: .5em;
+}
+
+#fave-technique__menu {
+  color: var(--background-blue);
+  background: ghostwhite;
+  border: 1px solid ghostwhite;
+  border-radius: 2px;
+  font-size: .75rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .75px;
+  padding: .75em 1.5em;
+  font-family: 'Josefin Sans', sans-serif;
+}
+#fave-technique__menu:focus {
+  border: 1px solid var(--accent-text);
+}
+
+/* lucidity scale */
+.lucidity-scale__title {
+  margin-bottom: .5em;
+}
+
+/* submit */
+.submit {
+  padding: 1em 0;
+}
+
+.submit__btn {
+  background: ghostwhite;
+  border: 1px solid var(--background-blue);
+  border-radius: 5px;
+  box-shadow: 0 0 6px 4px inset var(--background-blue);
+  color: var(--background-blue);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: .75px;
+  padding: .75em 1.5em;
+  text-transform: uppercase;
+}
+
+.submit__btn:hover,
+.submit__btn:focus {
+  color: var(--trans-blue);
+  cursor: pointer;
+  box-shadow: 0 0 5px 3px inset var(--background-blue);
+}
+.submit__btn:focus {
+  border: 1px solid var(--accent-text);
+}
+
+/* footer */
+
+.author-info {
+  line-height: 1.1;
+  font-size: .875rem;
+  opacity: 65%;
+  padding: .5em 0;
+}
+
+/* =======
+media query
+========== */
+@media (min-width: 37.5em) {
+ .flexbox {
+   flex-direction: row;
+   justify-content: space-between;
+   border: 1px solid pink;
+   margin: 0 auto;
+   width: min(100%, 950px);
+ }
+ .flexbox .container {
+  width: 100%;
+}
