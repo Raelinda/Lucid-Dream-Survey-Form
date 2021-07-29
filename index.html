@@ -6,36 +6,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="style.css">
-  <title>Document</title>
+  <link rel="shortcut icon" href="#">
+  <title>Lucid Dream Survey Form</title>
 </head>
 
 <body>
+
   <div class="container">
-    <header>
+    <header class="container--blue">
       <h1>Lucid Dream Survey Form</h1>
       <p class="header__rotating-text">Are you absolutely sure you are awake?</p>
     </header>
-  </div>
 
-  <main>
-    <form id="ld-survey" action="#" method="POST">
-
-      <div class="flexbox">
-        <div class="container">
-          <div class="user-info">
-            <label for="fName" class="user-info__label">first name</label><br>
-            <input type="text" name="fName" id="fName" placeholder="first name" required><br>
-            <label for="lName" class="user-info__label">last name</label><br>
-            <input type="text" name="lName" id="lName" placeholder="last name" required><br>
-            <label for="email" class="user-info__label">email</label><br>
-            <input type="email" name="email" id="email" placeholder="email" required>
+    <div class="container-desktop">
+      <form id="ld-survey" action="#" method="POST">
+        
+          <div class="container-tablet">
+            <div class="user-info container--blue">
+              <label for="fName" class="user-info__label">first name</label><br>
+              <input type="text" name="fName" id="fName" placeholder="first name" required><br>
+              <label for="lName" class="user-info__label">last name</label><br>
+              <input type="text" name="lName" id="lName" placeholder="last name" required><br>
+              <label for="email" class="user-info__label">email</label><br>
+              <input type="email" name="email" id="email" placeholder="email" required>
+            </div>
+            <div class="lucidity-scale container--blue">
+              <h2 class="lucidity-scale__label">Rate yourself<br> on the lucidity scale:</h2>
+              <input type="radio" id="savant" value="savant">
+              <label for="savant">Savant</label><br>
+              <input type="radio" id="bootstrapper" value="bootstrapper">
+              <label for="bootstrapper">Bootstrapper</label><br>
+              <input type="radio" id="wannabe" value="wannabe">
+              <label for="wannabe">Wannabe</label>
+            </div>
           </div>
-        </div>
+       
 
-        <div class="container">
-          <div class="reality-checks">
-            <p class="reality-checks__title">Which of the following reality checks do you use?<br><span
-                class="light-weight-text">(check all that apply.)</span></p>
+        
+          <div class="reality-checks container--blue">
+            <h2 class="reality-checks__label">Which of the following reality checks do you use?<br> <span
+                class="light-weight-text">(check all that apply.)</span></h2>
             <input type="checkbox" name="nose" value="nose">
             <label for="nose">Breathing through pinched nose</label><br>
             <input type="checkbox" name="palm" value="palm">
@@ -45,14 +55,8 @@
             <input type="checkbox" name="read" value="read">
             <label for="read">Trying to read text</label>
           </div>
-        </div>
-      </div>
-
-      <div class="flexbox">
-        <div class="container">
-          <div class="fave-technique">
-            <label for="fave-technique__menu" class="fave-technique__label">What is your favorite LD induction
-              technique?</label><br>
+          <div class="fave-technique container--blue">
+            <h2 class="fave-technique__label">What is your favorite LD induction technique?</h2><br>
             <select id="fave-technique__menu" name="fave-technique__menu">
               <option class="option" value="">choose 1 from menu</option>
               <option value="wild">WILD</option>
@@ -62,39 +66,21 @@
               <option value="Raduga">The Phase</option>
             </select>
           </div>
-        </div>
-        <div class="container">
-          <div class="lucidity-scale">
-            <p class="lucidity-scale__title">Rate yourself on the lucidity scale:</p>
-            <input type="radio" id="savant" value="savant">
-            <label for="savant">Savant</label><br>
-            <input type="radio" id="bootstrapper" value="bootstrapper">
-            <label for="bootstrapper">Bootstrapper</label><br>
-            <input type="radio" id="wannabe" value="wannabe">
-            <label for="wannabe">Wannabe</label>
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="submit">
-          <!-- <p class="submit__text">Click button to submit form</p> -->
-          <button type="submit" class="submit__btn" form="ld-survey">submit</button>
-        </div>
-      </div>
-
-    </form>
-
-  </main>
-
-
-  <div class="container">
-    <footer>
-      <p class="author-info">
-        Raelinda Woad<br>2021
-      </p>
-    </footer>
+    
+    <div class="submit container--blue">
+      <button type="submit" class="submit__btn" form="ld-survey">submit</button>
+    </div>
   </div>
+    </form>
+  </div>
+
+  <footer>
+    <p class="author-info">
+      Coded by Raelinda Woad<br>2021
+    </p>
+  </footer>
+
+
   <!-- <footer class="footer"><p>This form is a student project.<br> It does not connect to an actual survey site.</p>
     <p class="raduga">But if you are interested in learning how to lucid dream,
         <a href="https://obe4u.com"><br>click here for free lucid dreaming info.</a><br>(Don't let Raduga's initial woo-woo syntax throw you off,<br>he delivers pragmatic, field-tested LD induction techniques.)
