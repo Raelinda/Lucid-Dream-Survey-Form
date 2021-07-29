@@ -189,6 +189,30 @@ h2,
     transform: scale(1) rotate(0deg);
   }
 }
+.messageToUser {
+  background: var(--transparent-blue);
+  padding: 2em;
+  margin: 1rem 0 0;
+  border-radius: 5px;
+  text-align: center;
+}
+.raduga {
+  display: inline-block;
+  font-size: 1.5em;
+  margin: .5em 0;
+  padding: .5em 1em;
+  color: ghostwhite;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 2px;
+}
+.raduga:hover {
+  opacity: 65%;
+}
+.raduga:focus {
+  border: 2px solid var(--pale-lavendar);
+}
 
 /* ======
 layout
