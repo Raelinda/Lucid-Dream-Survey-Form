@@ -108,7 +108,7 @@ body basics
 =========== */
 
 :root {
-  --transparent-blue: hsla(202, 100%, 18%, 0.8);
+  --transparent-blue: hsla(202, 100%, 18%, 0.7);
   --opaque-blue: #003a5c;
   --pale-lavendar: #CB8DC3;
 }
