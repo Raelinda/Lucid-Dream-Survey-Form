@@ -286,10 +286,11 @@ footer {
 /* classes for JavaScript eventListener after hitting submit */
 .messageToUser {
   background: var(--transparent-blue);
-  padding: 2em;
-  margin: 1rem 0 0;
   border-radius: 5px;
   text-align: center;
+  line-height: 1.6;
+  margin: 40vh 0 0;
+  padding: 1em;
 }
 .raduga {
   display: inline-block;
