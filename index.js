@@ -18,18 +18,3 @@ ldSurvey.addEventListener('submit', e => {
 
 
 
-
-
-// const emailCollectorForm = document.getElementById('email-collector')
-
-// emailCollectorForm.addEventListener('submit', e => {
-//     event.preventDefault
-//     let emailFormData = new FormData(event.target)
-// let userFirstName = emailFormData.get('firstName')
-// let userEmailAddress = emailFormData.get('emailAddress')
-// let updatedMainContent = `<h2>Congratulations, ${userFirstName}!</h2>
-// <p>You're BBQ journey has begun!</p>
-// <p class="fine-print">updates will be sent to ${userEmailAddress}</p>`
-// let mainContent = document.getElementById('mainContent')
-// mainContent.innerHTML = updatedMainContent
-// })

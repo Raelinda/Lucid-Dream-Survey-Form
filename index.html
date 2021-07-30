@@ -15,66 +15,66 @@
   <div class="container">
     <header class="container--blue">
       <h1>Lucid Dream Survey Form</h1>
-      <div class="header__rotating-text">Are you absolutely sure you are awake?</div>
+      <div class="header__fade-in-text">Are you absolutely sure you are awake?</div>
     </header>
-<div id="main-content">
-    <div class="container-desktop">
+    <main id="main-content">
       <form id="ld-survey" action="#" method="POST">
-
-        <div class="container-tablet">
-          <div class="user-info container--blue">
-            <label for="fName" class="user-info__label">first name</label><br>
-            <input type="text" name="fName" id="fName" placeholder="first name" required><br>
-            <label for="lName" class="user-info__label">last name</label><br>
-            <input type="text" name="lName" id="lName" placeholder="last name" required><br>
-            <label for="email" class="user-info__label">email</label><br>
-            <input type="email" name="email" id="email" placeholder="email" required>
+        <div class="flex-container">
+          <div class="flex-item--left">
+            <div class="user-info container--blue">
+              <label for="fName" class="user-info__label">first name</label><br>
+              <input type="text" name="fName" id="fName" placeholder="first name" required><br>
+              <label for="lName" class="user-info__label">last name</label><br>
+              <input type="text" name="lName" id="lName" placeholder="last name" required><br>
+              <label for="email" class="user-info__label">email</label><br>
+              <input type="email" name="email" id="email" placeholder="email" required>
+            </div>
+            <div class="lucidity-scale container--blue">
+              <h2 class="lucidity-scale__label">Rate yourself<br> on the lucidity scale:</h2>
+              <input type="radio" id="savant" value="savant">
+              <label for="savant">Savant</label><br>
+              <input type="radio" id="bootstrapper" value="bootstrapper">
+              <label for="bootstrapper">Bootstrapper</label><br>
+              <input type="radio" id="wannabe" value="wannabe">
+              <label for="wannabe">Wannabe</label>
+            </div>
           </div>
-          <div class="lucidity-scale container--blue">
-            <h2 class="lucidity-scale__label">Rate yourself<br> on the lucidity scale:</h2>
-            <input type="radio" id="savant" value="savant">
-            <label for="savant">Savant</label><br>
-            <input type="radio" id="bootstrapper" value="bootstrapper">
-            <label for="bootstrapper">Bootstrapper</label><br>
-            <input type="radio" id="wannabe" value="wannabe">
-            <label for="wannabe">Wannabe</label>
+
+
+          <div class="flex-item--right">
+            <div class="reality-checks container--blue">
+              <h2 class="reality-checks__label">Which of the following reality checks do you use?<br> <span
+                  class="light-weight-text">(check all that apply.)</span></h2>
+              <input type="checkbox" name="nose" value="nose">
+              <label for="nose">Breathing through pinched nose</label><br>
+              <input type="checkbox" name="palm" value="palm">
+              <label for="palm">Finger through palm</label><br>
+              <input type="checkbox" name="light" value="light">
+              <label for="light">Testing a light switch</label><br>
+              <input type="checkbox" name="read" value="read">
+              <label for="read">Trying to read text</label>
+            </div>
+            <div class="fave-technique container--blue">
+              <h2 class="fave-technique__label">What is your favorite LD induction technique?</h2><br>
+              <select id="fave-technique__menu" name="fave-technique__menu">
+                <option class="option" value="">choose 1 from menu</option>
+                <option value="wild">WILD</option>
+                <option value="mild">MILD</option>
+                <option value="dild">DILD</option>
+                <option value="galantamine">Galantamine</option>
+                <option value="Raduga">The Phase</option>
+              </select>
+            </div>
+
+
+            <div class="submit container--blue">
+              <button type="submit" class="submit__btn" form="ld-survey">submit</button>
+            </div>
           </div>
         </div>
-
-
-
-        <div class="reality-checks container--blue">
-          <h2 class="reality-checks__label">Which of the following reality checks do you use?<br> <span
-              class="light-weight-text">(check all that apply.)</span></h2>
-          <input type="checkbox" name="nose" value="nose">
-          <label for="nose">Breathing through pinched nose</label><br>
-          <input type="checkbox" name="palm" value="palm">
-          <label for="palm">Finger through palm</label><br>
-          <input type="checkbox" name="light" value="light">
-          <label for="light">Testing a light switch</label><br>
-          <input type="checkbox" name="read" value="read">
-          <label for="read">Trying to read text</label>
-        </div>
-        <div class="fave-technique container--blue">
-          <h2 class="fave-technique__label">What is your favorite LD induction technique?</h2><br>
-          <select id="fave-technique__menu" name="fave-technique__menu">
-            <option class="option" value="">choose 1 from menu</option>
-            <option value="wild">WILD</option>
-            <option value="mild">MILD</option>
-            <option value="dild">DILD</option>
-            <option value="galantamine">Galantamine</option>
-            <option value="Raduga">The Phase</option>
-          </select>
-        </div>
-
-        <div class="submit container--blue">
-          <button type="submit" class="submit__btn" form="ld-survey">submit</button>
-        </div>
-      </form>
-      </div>
-    
   </div>
-</div>
+  </form>
+  </main>
   <footer>
     <p class="author-info">
       Coded by Raelinda Woad<br>2021
