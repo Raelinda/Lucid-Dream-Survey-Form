@@ -114,8 +114,6 @@ body basics
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   background: var(--opaque-blue);
   color: ghostwhite;
   font-family: 'Josefin Sans', sans-serif;
@@ -307,7 +305,7 @@ header.container--blue {
 footer {
   text-align: center;
   opacity: .5;
-  margin-top: auto;
+  margin-top: 2em;
 }
 
 /* 
